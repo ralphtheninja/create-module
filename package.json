@@ -1,0 +1,12 @@
+{
+  "name": "@ralphtheninja/create-module",
+  "version": "0.0.0",
+  "description": "Bootstrap script for setting up node module skeleton",
+  "bin": "create-module",
+  "keywords": [
+    "create",
+    "module"
+  ],
+  "author": "Lars Magnus Skog <ralphtheninja@riseup.net>",
+  "license": "MIT"
+}

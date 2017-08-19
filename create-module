@@ -1,0 +1,22 @@
+#!/bin/bash
+
+[[ "$1" == "" ]] && echo "Missing module name"
+
+NAME=$1
+PWD=$(pwd)
+
+SOURCE="${BASH_SOURCE[0]}"
+THIS="$( dirname "$SOURCE" )"
+while [ -h "$SOURCE" ]
+do
+    SOURCE="$(readlink "$SOURCE")"
+    [[ $SOURCE != /* ]] && SOURCE="$THIS/$SOURCE"
+    THIS="$( cd -P "$( dirname "$SOURCE"  )" && pwd )"
+done
+THIS="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+cp -r ${THIS}/templates/{index.js,README.md,package.json,.gitignore,.travis.yml} .
+sed -i s/__NAME__/${NAME}/g index.js README.md package.json
+
+npm i standard tape -D
+
