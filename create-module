@@ -20,5 +20,9 @@ cp ${THIS}/templates/gitignore .gitignore
 sed -i s/__NAME__/${NAME}/g index.js README.md package.json
 
 npm i standard tape -D
+mkdir -p test
+cp ${THIS}/templates/test/index.js test/index.js
+sed -i s/__NAME__/${NAME}/g test/index.js
+
 git init
 
