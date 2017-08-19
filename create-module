@@ -15,8 +15,10 @@ do
 done
 THIS="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-cp -r ${THIS}/templates/{index.js,README.md,package.json,.gitignore,.travis.yml} .
+cp -r ${THIS}/templates/{index.js,README.md,package.json,.travis.yml} .
+cp ${THIS}/templates/gitignore .gitignore
 sed -i s/__NAME__/${NAME}/g index.js README.md package.json
 
 npm i standard tape -D
+git init
 
