@@ -1,6 +1,6 @@
 {
   "name": "@ralphtheninja/create-module",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Bootstrap script for setting up node module skeleton",
   "bin": "create-module",
   "keywords": [
