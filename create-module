@@ -24,4 +24,5 @@ npm i standard tape -D
 sed -i s/__NAME__/${NAME}/g index.js README.md package.json test/index.js
 
 git init
-
+git add .
+git ci -m ':seedling: initial commit'
