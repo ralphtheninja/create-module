@@ -15,6 +15,8 @@ do
 done
 THIS="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
+mkdir -p ${NAME} && cd ${NAME}
+
 cp ${THIS}/templates/{index.js,README.md,package.json,.travis.yml} .
 cp ${THIS}/templates/gitignore .gitignore
 mkdir -p test && cp ${THIS}/templates/test/index.js test/index.js
