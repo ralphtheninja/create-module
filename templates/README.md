@@ -15,7 +15,7 @@ $ npm i __NAME__ -S
 
 TODO
 
-## Api
+## API
 
 TODO
 
