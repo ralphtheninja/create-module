@@ -2,6 +2,7 @@
 
 > TODO describe the use case
 
+![Node version](https://img.shields.io/node/v/__NAME__.svg)
 [![Build Status](https://travis-ci.org/ralphtheninja/__NAME__.svg?branch=master)](https://travis-ci.org/ralphtheninja/__NAME__)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
