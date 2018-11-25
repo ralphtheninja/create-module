@@ -11,7 +11,7 @@
     "url": "https://github.com/ralphtheninja/__NAME__.git"
   },
   "scripts": {
-    "test": "tape test && standard"
+    "test": "standard && node test"
   },
   "author": "Lars-Magnus Skog <ralphtheninja@riseup.net>",
   "keywords": [],
